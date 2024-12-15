@@ -1,12 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position: Relative</title>
     <style>
-        .box {
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+        }
+
+        .box_a {
             width: 200px;
             height: 200px;
             background-color: lightcoral;
@@ -15,14 +24,36 @@
             left: 10px;
             border: 2px solid black;
         }
-        .text{
-            justify-content: center;
+
+        .box_b {
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            border: 2px solid black;
+        }
+
+        .text {
+            text-align: center;
+            margin-left: 20%;
+            font-family: Arial, sans-serif;
+            color: #333;
+
         }
     </style>
 </head>
+
 <body>
-    <h1>Position: Relative</h1>
-    <div class="box"></div>
-    <p class="text">Relative positioning allows the element to be positioned relative to its normal position.</p>
+    <div>
+        <h1 style="text-align: center;">Position: Relative</h1>
+        <div class="container">
+            <div class="box_a"></div>
+            <div class="box_b"></div>
+        </div>
+        <p class="text">Relative position</p>
+    </div>
 </body>
+
 </html>
